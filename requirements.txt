@@ -1,0 +1,7 @@
+-e .
+streamlit==1.2.0
+more_itertools==8.12.0
+tenacity==8.0.1
+aiohttp==3.8.1
+jupyter==1.0.0
+plotly==5.3.1

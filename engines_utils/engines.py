@@ -9,9 +9,9 @@ import traceback
 """
 Helper module to make async bulk calls to Primer.ai Engines.
 
-Making asynchronous requests to the Primer.ai Engines speeds up the document throughput in your application. 
-Using an asynchronous design pattern, 'waiting time' while expecting a result from the API servers can be used 
-productively by carrying out other operations in the program, for example to trigger other concurrent requests, or 
+Making asynchronous requests to the Primer.ai Engines speeds up the document throughput in your application.
+Using an asynchronous design pattern, 'waiting time' while expecting a result from the API servers can be used
+productively by carrying out other operations in the program, for example to trigger other concurrent requests, or
 process the results from previous requests. See https://realpython.com/async-io-python/ for an excellent overview.
 
 This module follows a queue design (https://realpython.com/async-io-python/#using-a-queue) to be able to process large
@@ -26,12 +26,12 @@ are available.
 From a notebook, all that is required is:
 
 ```
-documents = [{"id": 123, "text": "lorem imsum"}, ... ]
+documents = [{"id": 123, "text": "lorem ipsum"}, ... ]
 results = infer_model_on_docs(documents, model_name='abstractive_topics', api_key=XXXX)
 # results will be a dictionary or document id to topics list.
 ```
 
-From insige a script, use:
+From inside a script, use:
 
 ```
 import asyncio
@@ -190,7 +190,7 @@ async def wait_for_task(session, name):
         print(f"Rate limit hit: waiting {s} seconds...")
         asyncio.sleep(s)
         raise TryAgain
-    
+
     return task
 
 

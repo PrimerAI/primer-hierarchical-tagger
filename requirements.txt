@@ -1,5 +1,5 @@
 -e .
-streamlit==1.2.0
+streamlit==1.11.1
 more_itertools==8.12.0
 tenacity==8.0.1
 aiohttp==3.8.1
